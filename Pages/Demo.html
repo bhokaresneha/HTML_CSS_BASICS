@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen-Flexbox 3</title>
+    <style>
+      
+  
+        body {
+          min-height:100vh;
+          margin: 0;
+          padding:0em;}
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+            height: 10vh;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+            height: 10vh;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+            height:80vh;
+                   
+        }
+
+        .mainContentItem{
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article{
+           
+            background: aqua;
+        }
+
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+            height: 30vh;
+
+        }
+
+        .sideBarLeftItem {background: gold;}
+        .sideBarRightItem{background: hotpink;}
+        
+        .sideBarItem {flex: 1 0 0;border: 0px solid green;}
+        .mainContentItem {flex: 3 0px;}
+        .sideBarLeftItem {order: 1;}
+        .mainContentItem {order: 2;} 
+        .sideBarRightItem {order: 3;} 
+
+    /* left side bar */
+
+  .cards img {
+    margin: 20px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 15vw;
+      }
+    /* .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  } */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+ 
+  /* right side bar */
+   .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width:  15vw;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    } 
+    .sideBarRightItem article{
+           
+           background: white;
+           padding: 10px;
+            margin: 10px;
+            height: 45vh;
+       }
+       /*Media object  */
+       .media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 50em;
+    max-height: 20vh ;
+  }
+  .media-object {
+    margin-right: 1em;
+  }
+   img {
+    max-width:5vw;
+  }
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }
+    </style>
+
+
+</head>
+<body  >
+    <header class="headerContainer"><h1>HEADER-Sample Flexbox Example</h1></header>
+    <div class="mainContainer" >
+        <section class="mainContentItem">
+            <article>
+              <ol>
+              <li><a href="BridgeLabz.html">BridgeLabz</a></li>
+              <li><a href="Layout.html">Layout</a></li>
+
+              <li><a href="Gallary.html">Gallary</a></li>
+              <li><a href="Card.html">Card</a></li>
+              <li><a href="MediaObject.html">Media Object</a></li>
+
+            </ol>
+                <h2>First article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics ihkhk lkhjkhk kbkbkjh jkbkhkhk kgkgkhkkhkujhkhjk  kjbkhkhkh jknkhnjkb fgyjgjg hmgbkjgjkh mnhhbkjgbjb nb mhbjkkjb  b mbkjbb mnbkjhjb m mjhjmnb nm bkjbmnn b mn mgjhvjhmnb kjjmgvhjnbvjhgvjhb mngb jmgkj hikhkjbkjhjkhjk</p>
+            </article>
+
+            <article>
+                <h2>Second Article</h2>
+                <p><div class="media">
+                  <img class="media-object" src="../assets/Gallary/Pic3.jpg" alt="Sample photo">
+                
+                  <div class="media-body">
+                    <h3 class="media-heading">Organically Synthesized</h3>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. </p>
+                
+                    <div class="media">
+                      <img class="media-object" src="../assets/Gallary/Pic3.jpg" alt="Sample photo">
+                      <div class="media-body">
+                        <h3 class="media-heading">Eco Processing</h3>
+                        <p>Holisticly predominate extensible testing procedures for reliable supply chains.</p>
+                      </div>
+                    </div>
+                
+                  </div>
+                </div></p>
+            </article>
+            
+        </section>
+        
+            
+    
+        <sideBar class="sideBarItem sideBarLeftItem">
+          <div class="cards">
+            <p >  
+              <img src="../assets/Gallary/Pic1.jpg" alt="Sample photo">
+              <img src="../assets/Gallary/Pic4.jpg" alt="Sample photo">
+              <img src="../assets/Gallary/Pic3.jpg" alt="Sample photo">
+            </p>
+          </div>
+        </sideBar>
+        <sideBar class="sideBarItem sideBarRightItem">
+          <article class="card">
+            <img src="../assets/Gallary/Pic1.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Seamlessly visualize quality</h3>
+              <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+              <button>Here's why</button>
+            </div>
+          </article>
+          
+        </sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>

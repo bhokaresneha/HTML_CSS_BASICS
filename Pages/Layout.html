@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen-Flexbox 3</title>
+    <style>
+      
+  
+        body {
+          min-height:100%;
+          margin: 0;
+          padding:0em;}
+
+        .headerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: tomato;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .footerContainer {
+            display: flex;
+            flex-flow: column wrap;
+            align-content: center;
+            background: lightgreen;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .mainContainer {
+            display: flex;
+            flex-flow: row wrap;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mainContentItem{
+            text-align: left;
+            background: deepskyblue;
+        }
+
+        article{
+           
+            background: aqua;
+        }
+
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+        }
+
+        .sideBarLeftItem {background: gold;}
+        .sideBarRightItem{background: hotpink;}
+        
+        .sideBarItem {flex: 1 0 0;border: 0px solid green;}
+        .mainContentItem {flex: 3 0px;}
+        .sideBarLeftItem {order: 1;}
+        .mainContentItem {order: 2;} 
+        .sideBarRightItem {order: 3;} 
+    </style>
+
+
+</head>
+<body  >
+    <header class="headerContainer"><h1>HEADER-Sample Flexbox Example</h1></header>
+    <div class="mainContainer" >
+        <section class="mainContentItem">
+            <article>
+              <ol>
+              <li><a href="../BridgeLabz.html">Home</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">Home</a></li>
+            </ol>
+                <h2>First article</h2>
+                <p>Tacos actually microdosing, pour-over semiotics ihkhk lkhjkhk kbkbkjh jkbkhkhk kgkgkhkkhkujhkhjk  kjbkhkhkh jknkhnjkb fgyjgjg hmgbkjgjkh mnhhbkjgbjb nb mhbjkkjb  b mbkjbb mnbkjhjb m mjhjmnb nm bkjbmnn b mn mgjhvjhmnb kjjmgvhjnbvjhgvjhb mngb jmgkj hikhkjbkjhjkhjk</p>
+            </article>
+
+            <article>
+                <h2>Second Article</h2>
+                <p>Tacos actually microdosing</p>
+            </article>
+            <article>
+                <h2>Third article </h2>
+                <p>Cray food truck bench</p>
+            </article>
+        </section>
+        
+            
+    
+        <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+        <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+
+</html>
