@@ -5,45 +5,45 @@
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="..\CSS\person_form.css">
-    <title>Person_Address_Form</title>
+    <title>Detail_Form</title>
     <script defer src="..\JS\Form.js"></script>
 </head>
 
 <body>
     <div id="formId" class="form-content">
-        <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
+        <form class="form" action="#"  onsubmit="myFunction()">
             <div class="form-head"> FORM
                 <!-- <img src="../assets/icons8-cancel.svg"  width="44px" height="42px" alt=""> -->
                 </a>
             </div>
         <div class="content">
 
-            <div class="row-content">
-            <label for="text"> Name : </label>&nbsp&nbsp
+        <div class="row-content">
+            <label for="text"> Name : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <input type="text" id="text" name="text" pattern="[A-Za-z\s]+" placeholder="Your Full Name...."required>
             <error-output class="text-error" for="text"></error-output>
         </div>
         <div class="row-content">
-            <label for="pwd"> Password : </label>&nbsp&nbsp
+            <label for="pwd"> Password : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"placeholder="Your Password...."required>
             <error-output class="pwd-error" for="pwd"></error-output>
         </div>
         
         <div class="row-content">
-            <label for="email">Email : </label>&nbsp&nbsp
-            <input type="email" id="email" name="email" placeholder="Your Email...."required>
+            <label for="email">Email : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="email" id="email" name="email" placeholder="xyz@gmail.com"required>
         </div>
         <div class="row-content">
-            <label for="url"> URL : </label>&nbsp&nbsp
-            <input type="url" name="url" id="url" placeholder="Your URL....">
+            <label for="url"> URL : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="url" name="url" id="url" placeholder="https://www.abc.com">
         </div>
         <!-- <div class="row-content">
             <label for="number">Number : </label>&nbsp&nbsp
             <input type="number" name="number" id="number" placeholder="Your Number....">
         </div> -->
         <div class="row-content">
-            <label for="tel"> Phone Number :</label>&nbsp&nbsp
+            <label for="tel"> Phone Number :</label>&nbsp
             <input type="text" name="tel" id="tel" placeholder="Your Phone Number...."required>
             <error-output class="tel-error" for="tell"></error-output>
         </div>
@@ -53,7 +53,7 @@
         </div> -->
         <div class="row-content">
             <label for="startDate"> Date And time :</label>&nbsp&nbsp
-            <input type="date" name="startdate" id="startdate">
+            <input type="date" name="startdate" id="startdate"required>
             <span class="validity"></span>
         </div>
         <div class="row-content">
@@ -62,12 +62,12 @@
             min="300000" max="500000" step="100" value="400000" >
             <output class="salary-output" for="salary">400000</output>
         </div>
-        <div >
-            <button onclick="myFunction()" id="register" >Submit</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <button type="reset" class="resetButton button" id="resetButton">Reset</button>
-
-        </div>
+        <div class="buttonParent">
+            <div class="submit-reset">
+                <button type="submit" class="button submitButton" id="submitButton"><b>Submit</b></button>
             </div>
+        </div>
+</div>
         </form>
     </div>
     <footer class="footer-content">

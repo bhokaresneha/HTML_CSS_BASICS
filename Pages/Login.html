@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <link rel="stylesheet" href="..\CSS\person_form.css">
+    <title>Login_Form</title>
+    <script defer src="..\JS\Form.js"></script>
+	</head>
+	<body>
+				<div id="formId"  class = "form-content1">
+    		<form class = "form" action="#"  onsubmit="return validation()"> 
+        	<div class="form-head">ADMIN LOGIN
+                <a href="..\pages\Login.html" class="cancel-button">
+        		</a>
+        	</div>
+					<div class="content">
+        	<div class = "row-content">
+            <label class = "text" for = "name"><b>USER ID</b></label>
+					</div>
+					<div class="row-content">
+            <input class = "input" type = "text" id="username" name="name"
+            placeholder="User ID" required>
+            <error-output class="text-error" for="text"></error-output>
+					</div>
+					<div class="row-content">
+						<label class="text" for = "phone"><b>PASSWORD</b></label>
+					</div>
+					<div class="row-content">
+						<input class="input" type = "text" id="password" name="password"
+            placeholder="Password" required>
+					</div>
+					<div class="buttonParent">
+						<div class="submit-reset">
+                            <button  type="submit">Login</button>
+
+                        </div>
+					</div>
+					
+					</div>
+				</form>
+					</div>
+					
+	</body>
+
+</html>
