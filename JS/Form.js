@@ -1,3 +1,17 @@
+function validation(){
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if(username=="admin" && password=="admin"){
+        alert("Login Successful !!!");
+        window.location.href="Form.html";
+        return false;
+    }else{
+        alert("Please Enter Valid User Name or Password");
+        window.location.href="Login.html";
+    }
+}
+
+
 const salary = document.querySelector('#salary');
         const output = document.querySelector('.salary-output');
         output.textContent = salary.value;
@@ -16,6 +30,6 @@ tel.addEventListener('input', function(){
 });
 
 function myFunction() {
-         window.location.href="http://programminghead.com";  
+    alert("Added Successful !!!");
        }
        
